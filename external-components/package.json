@@ -1,12 +1,14 @@
 {
   "name": "@goldenshun/external-components-example",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "publishConfig": {
     "access": "public"
   },
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build:production": "WEBPACK_MODE=production npm run build",
+    "prepare": "npm run build:production"
   },
   "author": "Sean Connolly",
   "license": "MIT",

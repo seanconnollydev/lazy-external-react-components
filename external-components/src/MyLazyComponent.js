@@ -1,7 +1,7 @@
 import React from 'react';
 
 function MyLazyComponent() {
-  return <div>MyLazyComponent post 0.0.7</div>;
+  return <div>MyLazyComponent post 0.0.9</div>;
 };
 
 export default MyLazyComponent;

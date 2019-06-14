@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.WEBPACK_MODE || 'development',
   entry: './src/MyComponent.js',
   module: {
     rules: [
