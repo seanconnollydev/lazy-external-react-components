@@ -18,7 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/goldenshun/demo#readme",
   "dependencies": {
-    "@goldenshun/external-components-example": "0.0.1",
+    "@goldenshun/external-components-example": "0.0.7",
     "next": "8.0.3",
     "react": "16.8.3",
     "react-dom": "16.8.3",

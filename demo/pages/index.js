@@ -1,5 +1,5 @@
 import NoSSR from 'react-no-ssr';
-import { MyComponent } from 'external-components';
+import { MyComponent } from '@goldenshun/external-components-example';
 
 const Index = () => (
   <NoSSR>
