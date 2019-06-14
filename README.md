@@ -13,7 +13,20 @@ This pattern leverages [React.lazy](https://reactjs.org/docs/code-splitting.html
 From the example:
 
 ```javascript
+import React, { Suspense } from 'react';
 const MyLazyComponent = React.lazy(() => import('./MyLazyComponent'));
+
+// MyComponent is the interface component that an application interacts with.
+function MyComponent() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      {/* MyLazyComponent is the concrete component that is dynamically fetched. */}
+      <MyLazyComponent />
+    </Suspense>
+  );
+}
+
+export default MyComponent;
 ```
 
 ## Webpack `publicPath`
