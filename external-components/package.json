@@ -1,7 +1,9 @@
 {
-  "name": "external-components",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@goldenshun/external-components-example",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "build": "webpack"

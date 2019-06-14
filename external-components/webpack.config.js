@@ -19,5 +19,6 @@ module.exports = {
     library: 'index',
     libraryTarget: 'umd',
     globalObject: 'this',
+    publicPath: 'https://unpkg.com/@goldenshun/external-components-example/dist/'
   }
 };
