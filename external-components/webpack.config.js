@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/MyComponent.js',
   module: {
     rules: [
@@ -17,6 +18,6 @@ module.exports = {
     filename: 'MyComponent.js',
     library: 'index',
     libraryTarget: 'umd',
-    globalObject: 'typeof self !== \'undefined\' ? self : this',
+    globalObject: 'this',
   }
 };

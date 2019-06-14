@@ -1,7 +1,10 @@
+import NoSSR from 'react-no-ssr';
 import { MyComponent } from 'external-components';
 
 const Index = () => (
-  <MyComponent />
+  <NoSSR>
+    <MyComponent />
+  </NoSSR>
 );
 
 export default Index;
