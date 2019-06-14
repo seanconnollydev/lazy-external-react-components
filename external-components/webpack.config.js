@@ -11,16 +11,12 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
-      root: 'React'
-    }
-  },
+  externals: ['react'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'MyComponent.js'
+    filename: 'MyComponent.js',
+    library: 'index',
+    libraryTarget: 'umd',
+    globalObject: 'typeof self !== \'undefined\' ? self : this',
   }
 };
